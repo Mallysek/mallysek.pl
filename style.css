@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+}
+
+.menu {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.liskismp, .portfolio, .bio, .sklep {
+    flex: 1;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 250%;
+    background-position: center;
+    background-size: cover;
+    transition: flex 0.5s, font-size 0.5s, background-image 0.5s;
+    cursor: pointer;
+}
+
+.liskismp:hover, .portfolio:hover, .bio:hover, .sklep:hover {
+    flex: 1.5;
+    font-size: 300%;
+}
+
+.liskismp {
+    background-image: linear-gradient(120deg, rgba(15, 15, 15, 0.6), rgba(26, 26, 46, 0.6), rgba(22, 33, 62, 0.6)), url(img/bg-mallysek.png);
+}
+.liskismp:hover {
+    background-image: linear-gradient(120deg, rgba(15, 15, 15, 0.6), rgba(26, 26, 46, 0.6), rgba(22, 33, 62, 0.6)), url(img/bg-mallysek2.png);
+}
+
+.portfolio {
+    background-image: linear-gradient(120deg, rgba(15, 15, 15, 0.6), rgba(26, 26, 46, 0.6), rgba(22, 33, 62, 0.6)), url(img/bg-mallysek.png);
+}
+.portfolio:hover {
+    background-image: linear-gradient(120deg, rgba(15, 15, 15, 0.6), rgba(26, 26, 46, 0.6), rgba(22, 33, 62, 0.6)), url(img/bg-mallysek2.png);
+}
+
+.bio {
+    background-image: linear-gradient(120deg, rgba(15, 15, 15, 0.6), rgba(26, 26, 46, 0.6), rgba(22, 33, 62, 0.6)), url(img/bg-mallysek.png);
+}
+.bio:hover {
+    background-image: linear-gradient(120deg, rgba(15, 15, 15, 0.6), rgba(26, 26, 46, 0.6), rgba(22, 33, 62, 0.6)), url(img/bg-mallysek2.png);
+}
+
+.sklep {
+    background-color: rgba(0, 238, 255, 0.966);
+}
