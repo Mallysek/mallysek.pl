@@ -27,6 +27,7 @@ body {
     background-size: cover;
     transition: flex 0.5s, font-size 0.5s, background-image 0.5s;
     cursor: pointer;
+    text-decoration: none; /* Gdybyś zrobił z nich linki <a> */
 }
 
 .liskismp:hover, .portfolio:hover, .bio:hover, .sklep:hover {
@@ -34,6 +35,7 @@ body {
     font-size: 300%;
 }
 
+/* Tła */
 .liskismp {
     background-image: linear-gradient(120deg, rgba(15, 15, 15, 0.6), rgba(26, 26, 46, 0.6), rgba(22, 33, 62, 0.6)), url(img/bg-mallysek.png);
 }
@@ -57,4 +59,22 @@ body {
 
 .sklep {
     background-color: rgba(0, 238, 255, 0.966);
+}
+
+/* --- FIX NA TELEFON --- */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column; /* Kafelki jeden pod drugim */
+    }
+
+    .liskismp, .portfolio, .bio, .sklep {
+        height: 25vh; /* Każdy zajmuje 1/4 wysokości ekranu */
+        width: 100%;
+        font-size: 180%; /* Trochę mniejszy tekst na telefon */
+    }
+
+    .liskismp:hover, .portfolio:hover, .bio:hover, .sklep:hover {
+        flex: 1.2; /* Mniejszy efekt powiększenia na dotyk */
+        font-size: 200%;
+    }
 }
